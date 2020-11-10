@@ -1,0 +1,21 @@
+<div class="alignright">
+<table border="1">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Duration</th>
+            <th>Genre</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let song of songsService.songs">
+            <td>{{song.title}}</td>
+            <td>{{song.duration}}</td>
+            <td>{{song.genre}}</td>
+            <td><input type="submit" value="Delete" (click)="songdelete(song.id)"></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+

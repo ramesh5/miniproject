@@ -1,0 +1,32 @@
+<div class="alignleft">
+
+    <h3>Add Songs</h3>
+
+    <div class="row">
+        <mat-form-field>
+            <mat-label> Song Title </mat-label>
+            <input matInput [(ngModel)]="newSongs">
+        </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field>
+            <mat-label> Song Duration (minutes) </mat-label>
+            <input matInput [(ngModel)]="duration">
+        </mat-form-field>
+    </div>
+
+    <div>
+    <section class="example-section">
+        <mat-checkbox class="example-margin" [(ngModel)]="slow"> Slow</mat-checkbox>
+        <mat-checkbox class="example-margin" [(ngModel)]="romance"> Romance </mat-checkbox>
+        <mat-checkbox class="example-margin" [(ngModel)]="remix"> Remixed </mat-checkbox>
+      </section>
+
+    </div>
+    <br>
+    <div>
+        <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+    </div>
+
+</div>
